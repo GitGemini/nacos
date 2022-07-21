@@ -30,7 +30,11 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @ServletComponentScan
 @EnableScheduling
 public class Nacos {
-    
+
+    /**
+     * 打包命令：
+     * mvn -Prelease-nacos -Dmaven.test.skip=true -Dcheckstyle.skip=true clean install -U
+     */
     public static void main(String[] args) {
         SpringApplication.run(Nacos.class, args);
     }
